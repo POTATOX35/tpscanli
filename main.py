@@ -1,5 +1,5 @@
 import requests
-from discord import SyncWebhook # Import SyncWebhook
+from discord import SyncWebhook 
 import warnings
 import tkinter as tk
 from tkinter import filedialog
@@ -12,7 +12,7 @@ import packaging
 import tkinter
 import customtkinter
 import locale
-
+import json
 
 
 
@@ -22,6 +22,10 @@ customtkinter.set_default_color_theme("green")
 
 
 
+
+with open('settings.json', 'r') as f:
+  data = json.load(f)
+  url = data['URL']
 
 
 
@@ -40,7 +44,7 @@ golbir3 = 0
 goliki1 =0
 goliki2 =0
 goliki3 = 0
-webhook = SyncWebhook.from_url('https://discord.com/api/webhooks/1205926575908982855/YefibiS5v8oJJthp05l5f-sCN1cGVnR1VWdH3ImHwjrAoeYnKg_T9vyAY0R3CQLbMPqT') # Initializing webhook
+webhook = SyncWebhook.from_url(str(url)) 
 def goltakımbir1():
     global skor
     global skors
@@ -158,7 +162,7 @@ frame.grid(row=1, column=0, padx=20, pady=(0, 20), sticky="w")
 frames = customtkinter.CTkFrame(master=rot)
 frames.grid(row=1, column=1, padx=20, pady=(0, 20), sticky="w")
 
-# Show image using label 
+
 
 
 label = customtkinter.CTkLabel(master=frame, text="Takım 1",font=fontssss)
