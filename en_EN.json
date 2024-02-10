@@ -1,4 +1,15 @@
 
 {
-    "URL"        : "https://discord.com/api/webhooks/1205926575908982855/YefibiS5v8oJJthp05l5f-sCN1cGVnR1VWdH3ImHwjrAoeYnKg_T9vyAY0R3CQLbMPqT" 
+   "Title" : "TPS Live Score Panel",
+   "Goal1" : "Goal 1",
+   "Goal2" : "Goal 2",
+   "Goal3" : "Goal 3",
+   "Teamname" : "Team Name",
+   "Firstpl" : "First Player",
+   "Secondpl" : "Second Player",
+   "Thirdpl" : "Third Player",
+   "End" : "End Match",
+   "Start" : "Start Match",
+   "Label1" : "Team 1",
+   "Label2" : "Team 2"
 }
