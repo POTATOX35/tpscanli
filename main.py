@@ -1,4 +1,4 @@
-import requests"\nEn golcü: "
+import requests
 from discord import SyncWebhook 
 import warnings
 import tkinter as tk
@@ -21,7 +21,7 @@ customtkinter.set_default_color_theme("green")
 
 
 if locale.getdefaultlocale()[0] == "tr_TR":
-    dil = "en_EN"
+    dil = "tr_TR"
 elif locale.getdefaultlocale()[0] == "en_EN":
     dil = "en_EN"
 
@@ -130,7 +130,7 @@ def baslats():
     goliki1 =0
     goliki2 =0
     goliki3 = 0
-    message = str(lang["Startn"]) +"\n"+str(takimadibir.get())+" " +"-" + " "+ str(takimadiiki.get())+" @everyone"
+    message = "Maç başladı !!!" +"\n"+str(takimadibir.get())+" " +"-" + " "+ str(takimadiiki.get())+" @everyone"
     webhook.send(str(message))
 def bitirs():
     global skor
@@ -141,9 +141,8 @@ def bitirs():
     global goliki1
     global goliki2
     global goliki3
-    global oyuncuaditakimbir1
-    message = str(lang["Endn"]) +"\n"+str(takimadibir.get())+" " + str(skor)+" " + "-" + " "+str(skors) +" " + str(takimadiiki.get()) 
-    message += "\n"
+    message = "Maç sona erdi !!!" +"\n"+str(takimadibir.get())+" " + str(skor)+" " + "-" + " "+str(skors) +" " + str(takimadiiki.get()) 
+    message += str(lang["Most"])
     var = {golbir1:oyuncuaditakimbir1.get(),golbir2:oyuncuaditakimbir2.get(),golbir3:oyuncuaditakimbir3.get(),goliki1:oyuncuaditakimiki1.get(),goliki2:oyuncuaditakimiki2.get(),goliki3:oyuncuaditakimiki3.get(),}
     
     if golbir1 > 0:
@@ -160,8 +159,7 @@ def bitirs():
         message += "\n" +oyuncuaditakimiki3.get() + ": "+ goliki3*(":soccer:")    
     
     
-    message+= str(lang["Most"])+ str(var.get(max(golbir1,golbir2,golbir3,goliki1,goliki2,goliki3)))
-    message += "\n"
+    message+= "\nEn golcü: "+ str(var.get(max(golbir1,golbir2,golbir3,goliki1,goliki2,goliki3)))
     message+=" \n@everyone"            
     webhook.send(str(message))
     
