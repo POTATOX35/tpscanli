@@ -26,12 +26,15 @@ customtkinter.set_default_color_theme("green")
 with open('settings.json', 'r') as f:
   data = json.load(f)
   url = data['URL']
+with open('en_EN.json', 'r') as f:
+  lang = json.load(f)
+  
 
 
 
 rot = customtkinter.CTk()
 rot.geometry("400x475")
-rot.title("TPS Canlı Skor Panel")
+rot.title(str(lang["Title"]))
 
 rot.resizable(0,0)
 skor = 0
@@ -165,46 +168,46 @@ frames.grid(row=1, column=1, padx=20, pady=(0, 20), sticky="w")
 
 
 
-label = customtkinter.CTkLabel(master=frame, text="Takım 1",font=fontssss)
+label = customtkinter.CTkLabel(master=frame, text=str(lang["Label1"]),font=fontssss)
 label.pack(pady=12,padx=10)
 
-labels = customtkinter.CTkLabel(master=frames, text="Takım 2",font=fontssss)
+labels = customtkinter.CTkLabel(master=frames, text=str(lang["Label2"]),font=fontssss)
 labels.pack(pady=12,padx=10)
 
-takimadibir = customtkinter.CTkEntry(master=frame,placeholder_text="Takım Adı",font=fontssss)
+takimadibir = customtkinter.CTkEntry(master=frame,placeholder_text=str(lang["Teamname"]),font=fontssss)
 takimadibir.pack(pady=12,padx=10) 
-takimadiiki= customtkinter.CTkEntry(master=frames,placeholder_text="Takım Adı",font=fontssss)
+takimadiiki= customtkinter.CTkEntry(master=frames,placeholder_text=str(lang["Teamname"]),font=fontssss)
 takimadiiki.pack(pady=12,padx=10) 
 
-oyuncuaditakimbir1 = customtkinter.CTkEntry(master=frame,placeholder_text="1. Oyuncu",font=fontssss)
+oyuncuaditakimbir1 = customtkinter.CTkEntry(master=frame,placeholder_text=str(lang["Firstpl"]),font=fontssss)
 oyuncuaditakimbir1.pack(pady=12,padx=10) 
-oyuncuaditakimiki1 = customtkinter.CTkEntry(master=frames,placeholder_text="1. Oyuncu",font=fontssss)
+oyuncuaditakimiki1 = customtkinter.CTkEntry(master=frames,placeholder_text=str(lang["Firstpl"]),font=fontssss)
 oyuncuaditakimiki1.pack(pady=12,padx=10) 
-oyuncuaditakimbir2 = customtkinter.CTkEntry(master=frame,placeholder_text="2. Oyuncu",font=fontssss)
+oyuncuaditakimbir2 = customtkinter.CTkEntry(master=frame,placeholder_text=str(lang["Secondpl"]),font=fontssss)
 oyuncuaditakimbir2.pack(pady=12,padx=10) 
-oyuncuaditakimiki2 = customtkinter.CTkEntry(master=frames,placeholder_text="2. Oyuncu",font=fontssss)
+oyuncuaditakimiki2 = customtkinter.CTkEntry(master=frames,placeholder_text=str(lang["Secondpl"]),font=fontssss)
 oyuncuaditakimiki2.pack(pady=12,padx=10) 
-oyuncuaditakimbir3 = customtkinter.CTkEntry(master=frame,placeholder_text="3. Oyuncu",font=fontssss)
+oyuncuaditakimbir3 = customtkinter.CTkEntry(master=frame,placeholder_text=str(lang["Thirdpl"]),font=fontssss)
 oyuncuaditakimbir3.pack(pady=12,padx=10) 
-oyuncuaditakimiki3 = customtkinter.CTkEntry(master=frames,placeholder_text="3. Oyuncu",font=fontssss)
+oyuncuaditakimiki3 = customtkinter.CTkEntry(master=frames,placeholder_text=str(lang["Thirdpl"]),font=fontssss)
 oyuncuaditakimiki3.pack(pady=12,padx=10) 
 
 
-button = customtkinter.CTkButton(master=frame, text="Gol 1", command=goltakımbir1,font=fontssss)
+button = customtkinter.CTkButton(master=frame, text=str(lang["Goal1"]), command=goltakımbir1,font=fontssss)
 button.pack(pady=12,padx=10)
-buttosn = customtkinter.CTkButton(master=frames, text="Gol 1", command=goltakımiki1,font=fontssss)
+buttosn = customtkinter.CTkButton(master=frames, text=str(lang["Goal1"]), command=goltakımiki1,font=fontssss)
 buttosn.pack(pady=12,padx=10)
-button = customtkinter.CTkButton(master=frame, text="Gol 2", command=goltakımbir2,font=fontssss)
+button = customtkinter.CTkButton(master=frame, text=str(lang["Goal2"]), command=goltakımbir2,font=fontssss)
 button.pack(pady=12,padx=10)
-buttosnn = customtkinter.CTkButton(master=frames, text="Gol 2", command=goltakımiki2,font=fontssss)
+buttosnn = customtkinter.CTkButton(master=frames, text=str(lang["Goal2"]), command=goltakımiki2,font=fontssss)
 buttosnn.pack(pady=12,padx=10)
-button = customtkinter.CTkButton(master=frame, text="Gol 3", command=goltakımbir3,font=fontssss)
+button = customtkinter.CTkButton(master=frame, text=str(lang["Goal3"]), command=goltakımbir3,font=fontssss)
 button.pack(pady=12,padx=10)
-buttosnnn = customtkinter.CTkButton(master=frames, text="Gol 3", command=goltakımiki3,font=fontssss)
+buttosnnn = customtkinter.CTkButton(master=frames, text=str(lang["Goal3"]), command=goltakımiki3,font=fontssss)
 buttosnnn.pack(pady=12,padx=10)
-bitir = customtkinter.CTkButton(master=frame, text="Maçı Bitir", command=bitirs,font=fontssss)
+bitir = customtkinter.CTkButton(master=frame, text=str(lang["End"]), command=bitirs,font=fontssss)
 bitir.pack(pady=12,padx=10)
-baslat = customtkinter.CTkButton(master=frames, text="Maçı Başlat", command=baslats,font=fontssss)
+baslat = customtkinter.CTkButton(master=frames, text=str(lang["Start"]), command=baslats,font=fontssss)
 baslat.pack(pady=12,padx=10)
 
 
