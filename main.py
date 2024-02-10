@@ -23,10 +23,10 @@ customtkinter.set_default_color_theme("green")
 
 
 
-with open('settings.json', 'r') as f:
+with open('settings.json', 'r',encoding="utf-8") as f:
   data = json.load(f)
   url = data['URL']
-with open('tr_TR.json', 'r') as f:
+with open('tr_TR.json', 'r',encoding="utf-8") as f:
   lang = json.load(f)
   
 
