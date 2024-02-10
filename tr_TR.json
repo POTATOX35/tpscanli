@@ -10,5 +10,12 @@
     "End" : "Maçı Bitir",
     "Start" : "Maçı Başlat",
     "Label1" : "Takım 1",
-    "Label2" : "Takım 2"
- }
+    "Label2" : "Takım 2",
+    "Goal" : "GOOOLL !!!",
+    "Found": " golü buldu ! Golün adı: ",
+    "Startn" :"Maç başladı !!!",
+    "Endn": "Maç sonra erdi !!!",
+    "Most": "En golcü: "
+
+     
+}
