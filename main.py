@@ -40,7 +40,7 @@ golbir3 = 0
 goliki1 =0
 goliki2 =0
 goliki3 = 0
-webhook = SyncWebhook.from_url('https://discord.com/api/webhooks/1205560395243196456/LF20wW637boGi6T_tCJxflVO6gzAhMcsQeSC0CCWU7IhWSrqz_PvraGO0Sh7FQKXbOhA') # Initializing webhook
+webhook = SyncWebhook.from_url('https://discord.com/api/webhooks/1205926575908982855/YefibiS5v8oJJthp05l5f-sCN1cGVnR1VWdH3ImHwjrAoeYnKg_T9vyAY0R3CQLbMPqT') # Initializing webhook
 def goltakımbir1():
     global skor
     global skors
