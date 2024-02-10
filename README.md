@@ -1,9 +1,16 @@
-## Tps Canlı Skor
+# Tps Canlı Skor
 
 Bu küçük panel sayesinde TPS:Street Soccer maçları esnasında Discord üzerinden maç skorlarını canlı bir şekilde yayınlayabilirsiniz. 
 
 # Özellikler
+## Maç Başlangıç Ve Bitiş Mesajları
+![image](https://github.com/POTATOX35/tpscanli/assets/81747015/813c77bb-b62b-4f8f-872d-2f3a0afe6336)
 
+## Anlık Skor Geri Bildirimi
+![image](https://github.com/POTATOX35/tpscanli/assets/81747015/2a03c79e-30a4-4ed0-9232-d469f8b6f696)
+
+## Maç Sonu Gol Tablosu
+![image](https://github.com/POTATOX35/tpscanli/assets/81747015/b94f9418-a1d8-4050-a602-31498b2639a5)
 
 
 # Nasıl Kurulur
