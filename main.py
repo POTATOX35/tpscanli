@@ -20,13 +20,28 @@ customtkinter.set_appearance_mode("dark")
 customtkinter.set_default_color_theme("green")
 
 
+if locale.getdefaultlocale()[0] == "tr_TR":
+    dil = "tr_TR"
+elif locale.getdefaultlocale()[0] == "en_EN":
+    dil = "en_EN"
 
 
 
 with open('settings.json', 'r',encoding="utf-8") as f:
   data = json.load(f)
+  
+data["Lang"] = str(dil) 
+
+with open('settings.json', 'w',encoding="utf-8") as f:
+    json.dump(data, f)
+
+
+with open('settings.json', 'r',encoding="utf-8") as f:
+  data = json.load(f)
   url = data['URL']
-with open('tr_TR.json', 'r',encoding="utf-8") as f:
+  language = str(data["Lang"])
+
+with open(language+'.json', 'r',encoding="utf-8") as f:
   lang = json.load(f)
   
 
