@@ -7,6 +7,7 @@ Bu küçük panel sayesinde TPS:Street Soccer maçları esnasında Discord üzer
 Öncelikle Discord sunucusunda bir "Webhook" oluşturmamız gerek. Bunun için Sunucu Ayarları>Entegrasyonlar>Webhook'ları Görüntüle
 sekmesine gelip yeni bir webhook oluşturuyoruz. 
 
+![Ssfromdiscord](https://github.com/POTATOX35/tpscanli/assets/81747015/e7a35387-2982-4141-9db6-5039f50e1c44)
 
 Kendi tercihlerinize dayalı isim, logo ve kanal gibi etmenleri seçtikten sonra "Webhook URL'sini Kopyala" seçeneğine basıyoruz ve gerekli olan URL'yi panoya kopyalmış oluyoruz. 
 
