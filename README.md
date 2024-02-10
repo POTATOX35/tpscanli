@@ -22,3 +22,5 @@ Kurulum bu kadardı...
 # Nasıl Kullanılır
 
 Klasör dizinindeki "main.exe" isimli dosyayı çalıştırıyoruz. Karşımıza çıkan menüde "Oyuncu Adı", "Takım Adı" gibi değerleri kendimize göre dolduruyoruz. Ardından "Maçı Başlat", "Maçı Bitir" butonlarla paneli kullanıyoruz.
+
+![image](https://github.com/POTATOX35/tpscanli/assets/81747015/4c840f36-fd3d-4641-92c2-45a0e636ba58)
