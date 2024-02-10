@@ -1,6 +1,10 @@
-# Tps Canlı Skor
+## Tps Canlı Skor
 
 Bu küçük panel sayesinde TPS:Street Soccer maçları esnasında Discord üzerinden maç skorlarını canlı bir şekilde yayınlayabilirsiniz. 
+
+# Özellikler
+
+
 
 # Nasıl Kurulur
 
