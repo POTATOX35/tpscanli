@@ -33,59 +33,115 @@ rot.resizable(0,0)
 skor = 0
 skors = 0
 
+golbir1 =0
+golbir2 =0
+golbir3 = 0
 
-
-
+goliki1 =0
+goliki2 =0
+goliki3 = 0
 webhook = SyncWebhook.from_url('https://discord.com/api/webhooks/1205560395243196456/LF20wW637boGi6T_tCJxflVO6gzAhMcsQeSC0CCWU7IhWSrqz_PvraGO0Sh7FQKXbOhA') # Initializing webhook
 def goltakımbir1():
     global skor
     global skors
+    global golbir1
+    golbir1 +=1
     skor += 1
+    
     message = "GOOOL !!! " + str(takimadibir.get()) + " golü buldu ! Golün adı: " + str(oyuncuaditakimbir1.get()) + " !!!" + "\n"+str(takimadibir.get())+" " + str(skor)+" " + "-" + " "+str(skors) +" " + str(takimadiiki.get())+ " @everyone"
     webhook.send(str(message))
 def goltakımbir2():
     global skor
     global skors
+    global golbir2
+    golbir2 +=1
     skor += 1
     message = "GOOOL !!! " + str(takimadibir.get()) + " golü buldu ! Golün adı: " + str(oyuncuaditakimbir2.get()) + " !!!" + "\n"+str(takimadibir.get())+" " + str(skor)+" " + "-" + " "+str(skors) +" " + str(takimadiiki.get())+ " @everyone"
     webhook.send(str(message))
 def goltakımbir3():
     global skor
     global skors
+    global golbir3
+    golbir3 +=1
     skor += 1
     message = "GOOOL !!! " + str(takimadibir.get()) + " golü buldu ! Golün adı: " + str(oyuncuaditakimbir3.get()) + " !!!" + "\n"+str(takimadibir.get())+" " + str(skor)+" " + "-" + " "+str(skors) +" " + str(takimadiiki.get())+ " @everyone"
     webhook.send(str(message))        
 def goltakımiki1():
     global skor
     global skors
+    global goliki1
+    goliki1 +=1
     skors += 1
     message = "GOOOL !!! " + str(takimadiiki.get()) + " golü buldu ! Golün adı: " + str(oyuncuaditakimiki1.get()) + " !!!" + "\n"+str(takimadibir.get())+" " + str(skor)+" " + "-" + " "+str(skors) +" " + str(takimadiiki.get())+ " @everyone"
     webhook.send(str(message))
 def goltakımiki2():
     global skor
     global skors
+    global goliki2
+    goliki2 +=1
     skors += 1
     message = "GOOOL !!! " + str(takimadiiki.get()) + " golü buldu ! Golün adı: " + str(oyuncuaditakimiki2.get()) + " !!!" + "\n"+str(takimadibir.get())+" " + str(skor)+" " + "-" + " "+str(skors) +" " + str(takimadiiki.get())+ " @everyone"
     webhook.send(str(message))
 def goltakımiki3():
     global skor
     global skors
+    global goliki3
+    goliki3 +=1
     skors += 1
     message = "GOOOL !!! " + str(takimadiiki.get()) + " golü buldu ! Golün adı: " + str(oyuncuaditakimiki3.get()) + " !!!" + "\n"+str(takimadibir.get())+" " + str(skor)+" " + "-" + " "+str(skors) +" " + str(takimadiiki.get())+ " @everyone"
     webhook.send(str(message))        
 def baslats():
- 
+    global skor
+    global skors
+    global golbir1
+    global golbir2
+    global golbir3
+    global goliki1
+    global goliki2
+    global goliki3
+    skors =0
+    skor =0
+    golbir1 =0
+    golbir2 =0
+    golbir3 = 0
+
+    goliki1 =0
+    goliki2 =0
+    goliki3 = 0
     message = "Maç başladı !!!" +"\n"+str(takimadibir.get())+" " +"-" + " "+ str(takimadiiki.get())+" @everyone"
     webhook.send(str(message))
 def bitirs():
     global skor
     global skors
-   
-    message = "Maç sona erdi !!!" +"\n"+str(takimadibir.get())+" " + str(skor)+" " + "-" + " "+str(skors) +" " + str(takimadiiki.get())+ " @everyone"
+    global golbir1
+    global golbir2
+    global golbir3
+    global goliki1
+    global goliki2
+    global goliki3
+    global oyuncuaditakimbir1
+    message = "Maç sona erdi !!!" +"\n"+str(takimadibir.get())+" " + str(skor)+" " + "-" + " "+str(skors) +" " + str(takimadiiki.get()) 
+    message += "\n"
+    var = {golbir1:oyuncuaditakimbir1.get(),golbir2:oyuncuaditakimbir2.get(),golbir3:oyuncuaditakimbir3.get(),goliki1:oyuncuaditakimiki1.get(),goliki2:oyuncuaditakimiki2.get(),goliki3:oyuncuaditakimiki3.get(),}
+    
+    if golbir1 > 0:
+        message += "\n" +oyuncuaditakimbir1.get() + ": "+ golbir1*(":soccer:")
+    if golbir2 > 0:
+        message += "\n" +oyuncuaditakimbir2.get() + ": "+ golbir2*(":soccer:")
+    if golbir3 > 0:
+        message += "\n" +oyuncuaditakimbir3.get() + ": "+ golbir3*(":soccer:")
+    if goliki1 > 0:
+        message += "\n" +oyuncuaditakimiki1.get() + ": "+ goliki1*(":soccer:")
+    if goliki2 > 0:
+        message += "\n" +oyuncuaditakimiki2.get() + ": "+ goliki2*(":soccer:")
+    if goliki3 > 0:
+        message += "\n" +oyuncuaditakimiki3.get() + ": "+ goliki3*(":soccer:")    
+    
+    
+    message+= "\nEn golcü: "+ str(var.get(max(golbir1,golbir2,golbir3,goliki1,goliki2,goliki3)))
+    message+=" \n@everyone"            
     webhook.send(str(message))
-    skors =0
-    skor =0
-
+    
 fontssss = customtkinter.CTkFont(family='fontui.ttf', size=16)
 
 
