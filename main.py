@@ -329,7 +329,7 @@ oyuncuaditakimiki3.pack(pady=12,padx=10)
 
 button = customtkinter.CTkButton(master=frame, text=str(lang["Goal1"]), command=goltakımbir1,font=fontssss)
 button.pack(pady=12,padx=10)
-buttosn = customtkinter.CTkButton(master=frames, text=str(lang["Goaln"]), command=goltakımiki1,font=fontssss)
+buttosn = customtkinter.CTkButton(master=frames, text=str(lang["Goal"]), command=goltakımiki1,font=fontssss)
 buttosn.pack(pady=12,padx=10)
 button = customtkinter.CTkButton(master=frame, text=str(lang["Goal2"]), command=goltakımbir2,font=fontssss)
 button.pack(pady=12,padx=10)
