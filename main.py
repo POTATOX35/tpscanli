@@ -13,7 +13,7 @@ import tkinter
 import customtkinter
 import locale
 import json
-
+from pynput.keyboard import Key, Listener
 from plyer import notification
 
 
@@ -99,14 +99,15 @@ def goltakımbir1():
     global golbir1
     golbir1 +=1
     skor += 1
-    
-    if skor - skors == 1:
+    if checkstart:
+        
+     if skor - skors == 1:
         message = str(lang["Goal"]) + str(takimadibir.get()) + str(lang["Front"]) + str(oyuncuaditakimbir1.get()) + " !!!" + "\n"+str(takimadibir.get())+" " + str(skor)+" " + "-" + " "+str(skors) +" " + str(takimadiiki.get())+ everyonecheck
         webhook.send(str(message))
-    elif skor == skors:
+     elif skor == skors:
         message = str(lang["Goal"]) + str(takimadibir.get()) + str(lang["Draw"]) + str(oyuncuaditakimbir1.get()) + " !!!" + "\n"+str(takimadibir.get())+" " + str(skor)+" " + "-" + " "+str(skors) +" " + str(takimadiiki.get())+ everyonecheck
         webhook.send(str(message))    
-    else:
+     else:
         message = str(lang["Goal"]) + str(takimadibir.get()) + str(lang["Found"]) + str(oyuncuaditakimbir1.get()) + " !!!" + "\n"+str(takimadibir.get())+" " + str(skor)+" " + "-" + " "+str(skors) +" " + str(takimadiiki.get())+ everyonecheck
         webhook.send(str(message))    
 def goltakımbir2():
@@ -115,13 +116,15 @@ def goltakımbir2():
     global golbir2
     golbir2 +=1
     skor += 1
-    if skor - skors == 1:
+    if checkstart:
+        
+     if skor - skors == 1:
         message = str(lang["Goal"]) + str(takimadibir.get()) + str(lang["Front"]) + str(oyuncuaditakimbir2.get()) + " !!!" + "\n"+str(takimadibir.get())+" " + str(skor)+" " + "-" + " "+str(skors) +" " + str(takimadiiki.get())+ everyonecheck
         webhook.send(str(message))
-    elif skor == skors:
+     elif skor == skors:
         message = str(lang["Goal"]) + str(takimadibir.get()) + str(lang["Draw"]) + str(oyuncuaditakimbir2.get()) + " !!!" + "\n"+str(takimadibir.get())+" " + str(skor)+" " + "-" + " "+str(skors) +" " + str(takimadiiki.get())+ everyonecheck
         webhook.send(str(message))    
-    else:
+     else:
         message = str(lang["Goal"]) + str(takimadibir.get()) + str(lang["Found"]) + str(oyuncuaditakimbir2.get()) + " !!!" + "\n"+str(takimadibir.get())+" " + str(skor)+" " + "-" + " "+str(skors) +" " + str(takimadiiki.get())+ everyonecheck
         webhook.send(str(message))    
 def goltakımbir3():
@@ -130,13 +133,15 @@ def goltakımbir3():
     global golbir3
     golbir3 +=1
     skor += 1
-    if skor - skors == 1:
+    if checkstart:
+        
+     if skor - skors == 1:
         message = str(lang["Goal"]) + str(takimadibir.get()) + str(lang["Front"]) + str(oyuncuaditakimbir3.get()) + " !!!" + "\n"+str(takimadibir.get())+" " + str(skor)+" " + "-" + " "+str(skors) +" " + str(takimadiiki.get())+ everyonecheck
         webhook.send(str(message))
-    elif skor == skors:
+     elif skor == skors:
         message = str(lang["Goal"]) + str(takimadibir.get()) + str(lang["Draw"]) + str(oyuncuaditakimbir3.get()) + " !!!" + "\n"+str(takimadibir.get())+" " + str(skor)+" " + "-" + " "+str(skors) +" " + str(takimadiiki.get())+ everyonecheck
         webhook.send(str(message))    
-    else:
+     else:
         message = str(lang["Goal"]) + str(takimadibir.get()) + str(lang["Found"]) + str(oyuncuaditakimbir3.get()) + " !!!" + "\n"+str(takimadibir.get())+" " + str(skor)+" " + "-" + " "+str(skors) +" " + str(takimadiiki.get())+ everyonecheck
         webhook.send(str(message))    
 def goltakımiki1():
@@ -145,13 +150,15 @@ def goltakımiki1():
     global goliki1
     goliki1 +=1
     skors += 1
-    if skors - skor == 1:
+    if checkstart:
+        
+      if skors - skor == 1:
         message = str(lang["Goal"]) + str(takimadiiki.get()) + str(lang["Front"]) + str(oyuncuaditakimiki1.get()) + " !!!" + "\n"+str(takimadibir.get())+" " + str(skor)+" " + "-" + " "+str(skors) +" " + str(takimadiiki.get())+ everyonecheck
         webhook.send(str(message))
-    elif skor == skors:
+      elif skor == skors:
         message = str(lang["Goal"]) + str(takimadiiki.get()) + str(lang["Draw"]) + str(oyuncuaditakimiki1.get()) + " !!!" + "\n"+str(takimadibir.get())+" " + str(skor)+" " + "-" + " "+str(skors) +" " + str(takimadiiki.get())+ everyonecheck
         webhook.send(str(message))    
-    else:
+      else:
         message = str(lang["Goal"]) + str(takimadiiki.get()) + str(lang["Found"]) + str(oyuncuaditakimiki1.get()) + " !!!" + "\n"+str(takimadibir.get())+" " + str(skor)+" " + "-" + " "+str(skors) +" " + str(takimadiiki.get())+ everyonecheck
         webhook.send(str(message))
 def goltakımiki2():
@@ -160,13 +167,15 @@ def goltakımiki2():
     global goliki2
     goliki2 +=1
     skors += 1
-    if skors - skor == 1:
+    if checkstart:
+        
+     if skors - skor == 1:
         message = str(lang["Goal"]) + str(takimadiiki.get()) + str(lang["Front"]) + str(oyuncuaditakimiki2.get()) + " !!!" + "\n"+str(takimadibir.get())+" " + str(skor)+" " + "-" + " "+str(skors) +" " + str(takimadiiki.get())+ everyonecheck
         webhook.send(str(message))
-    elif skor == skors:
+     elif skor == skors:
         message = str(lang["Goal"]) + str(takimadiiki.get()) + str(lang["Draw"]) + str(oyuncuaditakimiki2.get()) + " !!!" + "\n"+str(takimadibir.get())+" " + str(skor)+" " + "-" + " "+str(skors) +" " + str(takimadiiki.get())+ everyonecheck
         webhook.send(str(message))    
-    else:
+     else:
         message = str(lang["Goal"]) + str(takimadiiki.get()) + str(lang["Found"]) + str(oyuncuaditakimiki2.get()) + " !!!" + "\n"+str(takimadibir.get())+" " + str(skor)+" " + "-" + " "+str(skors) +" " + str(takimadiiki.get())+ everyonecheck
         webhook.send(str(message))
 def goltakımiki3():
@@ -175,13 +184,15 @@ def goltakımiki3():
     global goliki3
     goliki3 +=1
     skors += 1
-    if skors - skor == 1:
+    if checkstart:
+        
+     if skors - skor == 1:
         message = str(lang["Goal"]) + str(takimadiiki.get()) + str(lang["Front"]) + str(oyuncuaditakimiki3.get()) + " !!!" + "\n"+str(takimadibir.get())+" " + str(skor)+" " + "-" + " "+str(skors) +" " + str(takimadiiki.get())+ everyonecheck
         webhook.send(str(message))
-    elif skor == skors:
+     elif skor == skors:
         message = str(lang["Goal"]) + str(takimadiiki.get()) + str(lang["Draw"]) + str(oyuncuaditakimiki3.get()) + " !!!" + "\n"+str(takimadibir.get())+" " + str(skor)+" " + "-" + " "+str(skors) +" " + str(takimadiiki.get())+ everyonecheck
         webhook.send(str(message))    
-    else:
+     else:
         message = str(lang["Goal"]) + str(takimadiiki.get()) + str(lang["Found"]) + str(oyuncuaditakimiki3.get()) + " !!!" + "\n"+str(takimadibir.get())+" " + str(skor)+" " + "-" + " "+str(skors) +" " + str(takimadiiki.get())+ everyonecheck
         webhook.send(str(message))
 def baslats():
@@ -251,6 +262,27 @@ def bitirs():
     message+=" \n"+everyonecheck            
     webhook.send(str(message))
     
+    
+def on_press(key):
+    
+    if str(key) == "'1'":
+        goltakımbir1()
+    elif str(key) == "'2'":
+        goltakımbir2()   ,
+    elif str(key) == "'3'":
+        goltakımbir3()       
+    elif "97" in str(key):
+        goltakımiki1()      
+    elif "98" in str(key):
+        goltakımiki2()     
+    elif "99" in str(key):
+        goltakımiki3()              
+    elif "home" in str(key):
+        baslats()             
+    elif "end" in str(key):
+        bitirs()     
+    
+        
 fontssss = customtkinter.CTkFont(family='fontui.ttf', size=16)
 
 
@@ -312,6 +344,13 @@ bitir.pack(pady=12,padx=10)
 baslat = customtkinter.CTkButton(master=frames, text=str(lang["Start"]), command=baslats,font=fontssss)
 baslat.pack(pady=12,padx=10)
 
+with Listener(on_press=on_press) as listener:
+
+   rot.mainloop()
+
+    #listener.stop()
+   listener.join()
 
 
-rot.mainloop()
+
+
