@@ -16,6 +16,8 @@
    "Found": " scored ! The scorer is: ",
    "Startn" :"Match has started !!!",
    "Endn": "Match has ended !!!",
-   "Most": "\nMost scorer: "
+   "Most": "\nMost scorer: ",
+   "Draw": " caught the draw",
+   "Front": " taking the lead"
 
 }
