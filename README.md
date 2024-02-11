@@ -24,7 +24,7 @@ Kendi tercihlerinize dayalı isim, logo ve kanal gibi etmenleri seçtikten sonra
 
     {"URL": "Your webhook url", "Everyonecheck": "True", "Lang": "tr_TR"}
 
-Sonra <a href="http://example.com/" target="_blank">example</a> istediğiniz sürümü seçip inidiriyoruz ve zip dosyasını çıkarıyoruz.
+Sonra <a href="https://github.com/POTATOX35/tpscanliskor/releases" target="_blank">buradan</a> istediğiniz sürümü seçip inidiriyoruz ve zip dosyasını çıkarıyoruz.
 
 Daha sonrasında klasör dizinin içindeki "settings.json" isimli dosyayı not defteri tarzı bir text editor ile açıyoruz.Bu dosyanın içindeki "URL: " Kısımdaki "Your Webhook Url" yazan karşılığı kendi panomuzdaki url ile değiştiriyoruz.
 (Eğer bu adımı doğru bir şekilde yapmazsanız "Webook URL'si Eksik" gibi bildirim ya da hata alıp uygulamaya giremezsiniz. Bu adımı atlamayın...)
