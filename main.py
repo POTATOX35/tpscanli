@@ -36,7 +36,12 @@ if str(echeck) == "True":
 else:
       everyonecheck = "" 
   
-data["Lang"] = str(dil) 
+if data["Lang"] == locale.getdefaultlocale()[0]:
+    pass
+else:
+    data["Lang"] = str(dil) 
+    
+
 
 with open('settings.json', 'w',encoding="utf-8") as f:
     json.dump(data, f)
