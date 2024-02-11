@@ -91,6 +91,7 @@ goliki1 =0
 goliki2 =0
 goliki3 = 0
 
+checkstart = False
 def goltakımbir1():
     global skor
     global skors
@@ -191,17 +192,30 @@ def baslats():
     global goliki1
     global goliki2
     global goliki3
-    skors =0
-    skor =0
-    golbir1 =0
-    golbir2 =0
-    golbir3 = 0
+    global checkstart
+    
+    if str(takimadibir.get()) == ("") or str(takimadiiki.get()) == ("") or oyuncuaditakimbir1.get() == ("") or oyuncuaditakimbir2.get() == ("") or oyuncuaditakimbir3.get() == ("") or oyuncuaditakimiki1.get() == ("") or oyuncuaditakimiki2.get() == ("") or oyuncuaditakimiki3.get() == (""):
+        notification.notify(
+    title = str(lang["Errorempty"]),
+    message = str(lang["Emptyerror"]),
+    app_icon = None,
+    timeout = 10,
+)   
+    else:
+        
+    
+        checkstart = True
+        skors =0
+        skor =0
+        golbir1 =0
+        golbir2 =0
+        golbir3 = 0
 
-    goliki1 =0
-    goliki2 =0
-    goliki3 = 0
-    message = "Maç başladı !!!" +"\n"+str(takimadibir.get())+" " +"-" + " "+ str(takimadiiki.get())+everyonecheck
-    webhook.send(str(message))
+        goliki1 =0
+        goliki2 =0
+        goliki3 = 0
+        message = "Maç başladı !!!" +"\n"+str(takimadibir.get())+" " +"-" + " "+ str(takimadiiki.get())+everyonecheck
+        webhook.send(str(message))
 def bitirs():
     global skor
     global skors
@@ -211,8 +225,10 @@ def bitirs():
     global goliki1
     global goliki2
     global goliki3
+    global checkstart
+    checkstart = False
     message = "Maç sona erdi !!!" +"\n"+str(takimadibir.get())+" " + str(skor)+" " + "-" + " "+str(skors) +" " + str(takimadiiki.get()) 
-    message += str(lang["Most"])
+    
     var = {golbir1:oyuncuaditakimbir1.get(),golbir2:oyuncuaditakimbir2.get(),golbir3:oyuncuaditakimbir3.get(),goliki1:oyuncuaditakimiki1.get(),goliki2:oyuncuaditakimiki2.get(),goliki3:oyuncuaditakimiki3.get(),}
     
     if golbir1 > 0:

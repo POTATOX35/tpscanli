@@ -19,7 +19,9 @@
     "Draw": " beraberliği yakaladı",
     "Front": " öne geçiyor",
     "URLError" : "Webhook URL'si bozuk ya da eksik",
-    "Errortitle": "Eksik URL"
+    "Errortitle": "Eksik URL",
+    "Errorempty": "Eksik Adlar",
+    "Emptyerror": "Lütfen takım ve oyuncu adlarını giriniz"
 
      
 }

@@ -20,6 +20,9 @@
    "Draw": " caught the draw",
    "Front": " taking the lead",
    "URLError" : "The webhook URL has expired or not correct",
-   "Errortitle": "URL Missing"
+   "Errortitle": "URL Missing",
+   "Errorempty": "Missing Names",
+   "Emptyerror": "Please type names of players and teams"
+
 
 }
