@@ -14,6 +14,9 @@ import customtkinter
 import locale
 import json
 
+from plyer import notification
+
+
 
 
 customtkinter.set_appearance_mode("dark")
@@ -51,11 +54,25 @@ with open('settings.json', 'r',encoding="utf-8") as f:
   data = json.load(f)
   url = data['URL']
   language = str(data["Lang"])
+  
+
+
+    
 
 with open(language+'.json', 'r',encoding="utf-8") as f:
   lang = json.load(f)
   
-
+try:
+    webhook = SyncWebhook.from_url(str(url)) 
+except Exception as e:
+    if "webhook" in str(e):
+       notification.notify(
+    title = str(lang["Errortitle"]),
+    message = str(lang["URLError"]),
+    app_icon = None,
+    timeout = 10,
+)
+       quit()
 
 
 rot = customtkinter.CTk()
@@ -73,7 +90,7 @@ golbir3 = 0
 goliki1 =0
 goliki2 =0
 goliki3 = 0
-webhook = SyncWebhook.from_url(str(url)) 
+
 def goltakımbir1():
     global skor
     global skors

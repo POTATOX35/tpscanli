@@ -17,7 +17,9 @@
     "Endn": "Maç sonra erdi !!!",
     "Most": "\nEn golcü: ",
     "Draw": " beraberliği yakaladı",
-    "Front": " öne geçiyor"
+    "Front": " öne geçiyor",
+    "URLError" : "Webhook URL'si bozuk ya da eksik",
+    "Errortitle": "Eksik URL"
 
      
 }

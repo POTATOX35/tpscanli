@@ -18,6 +18,8 @@
    "Endn": "Match has ended !!!",
    "Most": "\nMost scorer: ",
    "Draw": " caught the draw",
-   "Front": " taking the lead"
+   "Front": " taking the lead",
+   "URLError" : "The webhook URL has expired or not correct",
+   "Errortitle": "URL Missing"
 
 }
