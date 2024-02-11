@@ -69,7 +69,8 @@ except Exception as e:
        notification.notify(
     title = str(lang["Errortitle"]),
     message = str(lang["URLError"]),
-    app_icon = None,
+    
+    app_name = str(lang["Title"]),
     timeout = 10,
 )
        quit()
@@ -198,7 +199,8 @@ def baslats():
         notification.notify(
     title = str(lang["Errorempty"]),
     message = str(lang["Emptyerror"]),
-    app_icon = None,
+    
+    app_name = str(lang["Title"]),
     timeout = 10,
 )   
     else:
