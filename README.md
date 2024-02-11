@@ -15,6 +15,10 @@ Bu küçük panel sayesinde TPS:Street Soccer maçları esnasında Discord üzer
 
 # Nasıl Kurulur
 
+Bu videoyu da izleyebilirsiniz:
+https://www.youtube.com/watch?v=JIj-koXQTUU&t=4s&ab_channel=Potatox
+
+
 Öncelikle Discord sunucusunda bir "Webhook" oluşturmamız gerek. Bunun için Sunucu Ayarları>Entegrasyonlar>Webhook'ları Görüntüle
 sekmesine gelip yeni bir webhook oluşturuyoruz. 
 
