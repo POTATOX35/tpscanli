@@ -54,7 +54,7 @@ def durum8():
     global durum
     print("Maçı başlatma tuşuna basınız: ")
     durum = "8"
-
+    quit()
 
 
 
@@ -121,7 +121,7 @@ def on_press(key):
         data["keyend"] = str(key) 
         f = open('settings.json', 'w',encoding="utf-8")
         json.dump(data, f) 
-        durum8(123456)
+        durum8()
     elif durum == "8":    
         f = open('settings.json', 'r',encoding="utf-8")
         
