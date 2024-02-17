@@ -54,7 +54,7 @@ def durum8():
     global durum
     print("Maçı başlatma tuşuna basınız: ")
     durum = "8"
-    quit()
+    
 
 
 
