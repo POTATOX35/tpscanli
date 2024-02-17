@@ -92,6 +92,8 @@ goliki1 =0
 goliki2 =0
 goliki3 = 0
 
+dey = ""
+
 checkstart = False
 def goltakımbir1():
     global skor
@@ -264,22 +266,25 @@ def bitirs():
     
     
 def on_press(key):
+    global dey
+    with open('settings.json', 'r',encoding="utf-8") as f:
+     dey = json.load(f)
     
-    if str(key) == "'1'":
+    if str(key) == str(dey["key1"]):
         goltakımbir1()
-    elif str(key) == "'2'":
+    elif str(key) == str(dey["key2"]):
         goltakımbir2()   ,
-    elif str(key) == "'3'":
+    elif str(key) == str(dey["key3"]):
         goltakımbir3()       
-    elif "97" in str(key):
+    elif str(key) == str(dey["key4"]):
         goltakımiki1()      
-    elif "98" in str(key):
+    elif str(key) == str(dey["key5"]):
         goltakımiki2()     
-    elif "99" in str(key):
+    elif str(key) == str(dey["key6"]):
         goltakımiki3()              
-    elif "home" in str(key):
+    elif str(key) == str(dey["keyhome"]):
         baslats()             
-    elif "end" in str(key):
+    elif str(key) == str(dey["keyend"]):
         bitirs()     
     
         
