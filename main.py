@@ -16,6 +16,12 @@ import json
 from pynput.keyboard import Key, Listener
 from plyer import notification
 
+import os
+
+
+import platform
+
+
 
 
 
